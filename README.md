@@ -1,6 +1,13 @@
-# Event Check-In Dashboard
+# Event-Customer-Check-In-Dashboard
 
 A React + Vite dashboard for managing event customers, QR check-ins, booth assignments, and customer status updates.
+
+## Live Demo
+
+- Demo: https://event-customer-checkin-dashboard.netlify.app/login
+
+## GitHub Repository
+- Repository: https://github.com/bhaurao8530/Event-Customer-Check-In-Dashboard
 
 ## Features
 - Login with protected routes
@@ -10,10 +17,11 @@ A React + Vite dashboard for managing event customers, QR check-ins, booth assig
 - Booth assignment workflow
 - Customer status updates and history
 - Toast notifications and responsive layout
-- Mock API layer with local storage persistence for demo and assignment use
+- Mock API layer with local storage persistence
 
-## Tech stack
+## Tech Stack
 - React
+- Vite
 - React Router
 - Redux Toolkit
 - Axios
@@ -22,40 +30,42 @@ A React + Vite dashboard for managing event customers, QR check-ins, booth assig
 - react-toastify
 - react-hook-form
 
-## Project structure
-- src/api: API services and mock backend helpers
-- src/components: reusable UI components
-- src/features: login, dashboard, customers, QR scanner, booth assignment, and status modules
-- src/routes: protected routing setup
-- src/store: Redux store and slices
-- src/utils: validation helpers
+## Project Structure
+- `src/api` : API services and mock backend helpers
+- `src/components` : Reusable UI components
+- `src/features` : Login, dashboard, customers, QR scanner, booth assignment, and status modules
+- `src/routes` : Protected routing setup
+- `src/store` : Redux store and slices
+- `src/utils` : Validation helpers
 
-## Getting started
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Start the development server:
-   ```bash
-   npm run dev
-   ```
-3. Open the app in your browser.
+## Getting Started
 
-## Demo credentials
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+## Demo Credentials
+
 - Email: admin@example.com
 - Password: 123456
 
-## Backend integration note
-The app is wired to use a real API base URL through VITE_API_BASE_URL when available. If you want to use the built-in demo data instead, keep VITE_USE_MOCK_API enabled or leave it unset.
+## Environment Variables
 
-Example:
 ```bash
 VITE_API_BASE_URL=http://localhost:5000/api
 VITE_USE_MOCK_API=true
 ```
 
 ## Build
+
 ```bash
 npm run build
 ```
-
